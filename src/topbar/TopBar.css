@@ -12,15 +12,45 @@
   }
   .topleft,.topriht{
     flex: 3;
+display: flex;
+align-items: center;
+justify-content: center;
 
   }
   .topimg{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    object-fit: contain;
+    object-fit: cover;
   }
   .topcenter{
     flex: 6;
     
+  }
+  .topicon{
+    font-size: 20px;
+    margin-right: 10px;
+    color:#ece2e2;
+    cursor: pointer;
+  }
+  .toplist{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+  }
+  .toplistitem{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  .searchicon{
+    font-size: 18px;
+    color: aliceblue;
+    cursor: pointer;
+    margin-left: 15px;
   }
