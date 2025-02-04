@@ -3,8 +3,9 @@ import Header from "../../Header/Header";
 const Home = () => {
   return (
     <div className="home">
-     <></> <Header/>
-     Home page
+     <> <Header/>
+   
+     </>
     </div>
   );
 };

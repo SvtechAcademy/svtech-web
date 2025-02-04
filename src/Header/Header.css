@@ -1,28 +1,41 @@
-.header{
+/* Header.css */
+.header {
     margin-top: 60px;
-
+    position: relative; /* Needed for absolute positioning of child elements */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
-.header-titles{
+
+.header-titles {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative; /* Create positioning context */
+    height: 450px; /* Match image height for proper positioning */
 }
-.headertitlesm{
+
+.headertitlesm {
     position: absolute;
-    top:18%;
-   
+    top: 18%; /* Adjusted percentage-based positioning */
     font-size: 20px;
+    z-index: 1; /* Ensure text appears above image */
 }
-.headertitlelg{
+
+.headertitlelg {
     position: absolute;
-    top: 30px;
-    font-size: 100px;
+    top: 20%; /* Adjusted percentage-based positioning */
+    font-size: 6vw; /* Responsive font size */
+    z-index: 1;
+    white-space: nowrap; /* Prevent text wrapping */
 }
-.headerimg{
+
+.headerimg {
     width: 100%;
     height: 450px;
-    margin-top: 80px;
     object-fit: cover;
+    position: absolute; /* Remove default spacing */
+    top: 0;
+    left: 0;
 }
